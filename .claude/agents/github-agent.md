@@ -22,6 +22,10 @@ scripts/github.sh push                            # push current branch (update 
 scripts/github.sh update <number> --body-file /tmp/body.md  # update issue body
 scripts/github.sh finish <number>                 # label in-review
 scripts/github.sh done <number>                   # label done + close
+
+scripts/files.sh find <pattern> [path]            # find files by glob
+scripts/files.sh grep <pattern> [path] [--name <glob>]  # search contents
+scripts/files.sh cat <file> [file...]             # display file(s)
 ```
 
 ## Creating issues with custom body

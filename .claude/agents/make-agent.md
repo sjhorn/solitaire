@@ -42,10 +42,18 @@ Inputs: the failing test(s), relevant source files
 2. Do not refactor, gold-plate, or add untested behaviour.
 3. Output: path(s) of files changed and a one-line summary of what was implemented.
 
+## File utilities
+
+```
+scripts/files.sh find <pattern> [path]            # find files by glob
+scripts/files.sh grep <pattern> [path] [--name <glob>]  # search contents
+scripts/files.sh cat <file> [file...]             # display file(s)
+```
+
 ## Rules
 - Never use `$()` `&2>1` `>` `|` `tr`  `&&` `||` when calling tools these are embedded in the scripts.
 - Follow the naming and style conventions already present in the codebase.
-- If you are unsure of the project structure read relevant files before writing anything.
+- If you are unsure of the project structure, use `scripts/files.sh` to explore before writing anything.
 - Never delete existing tests.
 - Never modify a test file during GREEN mode.
 - If the task is ambiguous, ask one clarifying question before writing code.
