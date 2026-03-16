@@ -9,14 +9,14 @@ Always work through the steps below in order. Never skip steps when implementing
 
 ## Agents
 
-| Agent | Role |
-|---|---|
-| `github-agent` | Issues, branches, commits, PRs |
-| `make-agent` | Writes failing tests (RED) |
-| `test-agent` | Runs tests, reports pass/fail, regresssion, coverage |
-| `docs-agent` | Documentation, examples, README, CHANGELOG. Owns doc/, example/, README.md, CHANGELOG.md. |
-| `benchmark-agent` | Performance benchmarks. Owns benchmark/. Read-only on lib/. |
-| `publish-agent` | Publish package to pub.dev. Validates quality gates, runs dry-run, and publishes. |
+| Agent | Role | Definition |
+|---|---|---|
+| `github-agent` | Issues, branches, commits, PRs | [.claude/agents/github-agent.md](.claude/agents/github-agent.md) |
+| `make-agent` | Writes failing tests (RED) | [.claude/agents/make-agent.md](.claude/agents/make-agent.md) |
+| `test-agent` | Runs tests, reports pass/fail, regression, coverage | [.claude/agents/test-agent.md](.claude/agents/test-agent.md) |
+| `docs-agent` | Documentation, examples, README, CHANGELOG. Owns doc/, example/, README.md, CHANGELOG.md. | [.claude/agents/docs-agent.md](.claude/agents/docs-agent.md) |
+| `benchmark-agent` | Performance benchmarks. Owns benchmark/. Read-only on lib/. | [.claude/agents/benchmark-agent.md](.claude/agents/benchmark-agent.md) |
+| `publish-agent` | Publish package to pub.dev. Validates quality gates, runs dry-run, and publishes. | [.claude/agents/publish-agent.md](.claude/agents/publish-agent.md) |
 
 ---
 
